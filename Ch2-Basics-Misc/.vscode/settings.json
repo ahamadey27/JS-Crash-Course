@@ -1,0 +1,7 @@
+{
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    "editor.screenReaderAnnounceInlineSuggestion": true,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never"
+}

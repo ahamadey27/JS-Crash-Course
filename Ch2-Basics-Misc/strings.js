@@ -19,3 +19,8 @@ console.log(upLowString.toUpperCase());
 //Returns string with repeated count times
 let repeatedString = "CAREFUL\n";
 console.log(repeatedString.repeat(3));
+
+//Escape Sequence   
+let escape1 = "Alex";
+let escape2 = "39";
+console.log(`My name is ${escape1} and I'm ${escape2}`);

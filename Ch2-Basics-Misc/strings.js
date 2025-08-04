@@ -24,3 +24,14 @@ console.log(repeatedString.repeat(3));
 let escape1 = "Alex";
 let escape2 = "39";
 console.log(`My name is ${escape1} and I'm ${escape2}`);
+
+//Truthiness and Falsiness
+let nameFalse;
+nameFalse = nameFalse || "No name provided";
+console.log(nameFalse);
+
+let nameTrue = "Alex"
+nameTrue = nameTrue || "No name provided";
+console.log(nameTrue);
+
+

@@ -13,6 +13,15 @@ languages.push("C++");
 languages.push("Rush");
 console.log(languages);
 languages.unshift("elem 0"); //inserts new element to start of array
-languages.unshift("elem 1");
+languages.unshift("elem 1"); //This will now be first element of the array
 console.log(languages);
+languages.pop(); //removes last element of array
+console.log(languages);
+let leastFavLang = languages.shift(); //removes first element from array
+console.log(`My least favorite element in ${leastFavLang}`);
+console.log(languages);
+
+
+
+
 

@@ -7,7 +7,7 @@ primes[0] = 1;
 console.log(primes[0]);
 
 let languages = [];
-languages.push("C");
+languages.push("C");//inserts element to end of array
 languages.push("C#");
 languages.push("C++");
 languages.push("Rush");

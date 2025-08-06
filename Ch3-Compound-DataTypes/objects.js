@@ -21,4 +21,9 @@ console.log(dictionaryValue);
 console.log(Object.keys(dictionaryValue)); //get all keys of an object
 console.log(Object.values(dictionaryValue));
 
+//Combining objects
+let combineObjects = {};
+console.log(Object.assign(dictionaryValue, casablanca));
+
+
 

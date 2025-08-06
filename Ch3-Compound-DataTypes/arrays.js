@@ -40,6 +40,12 @@ console.log(sizes.indexOf("medium"));
 let numString = ["1", "2", "3", "4"]
 console.log(numString.join());
 
+//Use join method to convert "XXX" array to "XoXoXo"
+let Xxx = ["X", "X", "X"]
+console.log(Xxx.join("o")); //adds argument between each array index (not after last one)
+
+
+
 
 
 

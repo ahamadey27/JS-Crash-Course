@@ -42,5 +42,13 @@ let trilogies = [
 console.log(trilogies[1].books);
 console.log(trilogies[1].books[2]);
 
+//quick for loop exercise that is same as foreach loop
+let colors = ["red", "yellow", "orange"]
+for (let [index, item] of colors.entries())  //entries returns key value pair for each item
+{
+    console.log(`${index}: ${item} is a color`);
+    
+}
+
 
 

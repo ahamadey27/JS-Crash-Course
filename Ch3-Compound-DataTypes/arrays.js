@@ -32,6 +32,15 @@ let bugs = ["ant", "bee", "fly"]
 let animals = fish.concat(mammals, bugs);
 console.log(animals);
 
+//finding index of an array. If element is not found returns value of -1
+let sizes = ["small", "medium", "large"]
+console.log(sizes.indexOf("medium"));
+
+//Turning an array into a string
+let numString = ["1", "2", "3", "4"]
+console.log(numString.join());
+
+
 
 
 

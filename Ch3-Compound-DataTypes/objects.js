@@ -25,5 +25,22 @@ console.log(Object.values(dictionaryValue));
 let combineObjects = {};
 console.log(Object.assign(dictionaryValue, casablanca));
 
+//nesting with literals
+let trilogies = [
+    {
+        title: "darm materials",
+        author: "phillip pullman",
+        books: ["northern lights", "subtle knife", "amber spy"]
+    }, 
+    {
+        title: "broken earth",
+        author: "nk jessem",
+        books: ["fifth season", "obelisk gate", "stone city"]
+    }, 
+]
+
+console.log(trilogies[1].books);
+console.log(trilogies[1].books[2]);
+
 
 

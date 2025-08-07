@@ -10,4 +10,4 @@ function intToString(index)
     return strings[index];
 }
 
-console.log(intToString(1));
+console.log(intToString(3));

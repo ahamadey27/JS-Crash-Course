@@ -17,3 +17,12 @@ class Player
 //Object of Player Class
 //This 1. Creates a new, empty object and 2. The class Constructor is called automatically
 player1 = new Player(0, 0);
+player1.move(3, 4);
+console.log(player1);
+
+//new instance of player
+player2 = new Player(0, 0);
+player2.move(10, 6);
+console.log(player2);
+
+

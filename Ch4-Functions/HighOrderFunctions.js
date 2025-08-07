@@ -7,6 +7,16 @@ console.log(shoppingList.find(item => item[0] === "A")); //element that starts w
 
 //Transforming each elements of an array
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8,]
-let cubes = numbers.map(x => x * x* x); //returns cubed result of each argument of array
+let cubes = numbers.map(x => x * x* x); //returns cubed result of each argument of array. Use .map instead of for loop
 console.log(cubes);
 
+let stockList = [
+    {name: "cheese", price: 3},
+    {name: "milk", price: 5},
+    {name: "eggs", price: 6}
+];
+let price = stockList.map(list => list.price);
+let name = stockList.map(list => list.name);
+console.log(price, name);
+
+//Custom

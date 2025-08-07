@@ -19,4 +19,10 @@ let price = stockList.map(list => list.price);
 let name = stockList.map(list => list.name);
 console.log(price, name);
 
-//Custom
+//Custom functions that take callbacks 
+function doubler(callback)
+{
+    callback();
+    callback();
+}
+doubler(() => console.log("hello"));

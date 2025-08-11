@@ -8,12 +8,15 @@ function isPalindrome(stringInput)
     if (stringInput === revString) 
     {
         console.log("Is a palindrome");
+        // Output: Is a palindrome (if input is a palindrome)
     } 
     else 
     {
         console.log("Is not a palindrome");
+        // Output: Is not a palindrome (if input is not a palindrome)
     }
 }
 
 isPalindrome("adal");
+// Output: Is not a palindrome
 

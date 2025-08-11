@@ -11,3 +11,4 @@ function intToString(index)
 }
 
 console.log(intToString(3));
+// Output: "3"

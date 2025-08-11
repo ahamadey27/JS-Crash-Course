@@ -12,6 +12,30 @@ class Player
         this.x += dx;
         this.y += dy;
     }
+
+    
+}
+
+class Actor
+{
+    constructor(startX, StartY)
+    {
+        this.x = startX;
+        this.y = StartY;
+    }
+
+    move (dx, dy)
+    {
+        this.x += dx;
+        this.y += dy;
+    }
+
+    distanceTo(otherActor)
+    {
+        let dx = otherActor.x - this.x;
+        let dy = otherActor.y - this.y;
+        return Math.hypot(dx, dy);
+    }
 }
 
 //Object of Player Class

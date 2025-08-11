@@ -16,7 +16,7 @@ class Player
     
 }
 
-class Actor
+class Actor //an abstract class
 {
     constructor(startX, StartY)
     {
@@ -35,6 +35,15 @@ class Actor
         let dx = otherActor.x - this.x;
         let dy = otherActor.y - this.y;
         return Math.hypot(dx, dy);
+    }
+}
+
+class Player extends Actor
+{
+    constructor(startX, StartY)
+    {
+        super(startX, startY);
+        this.hp = 100;
     }
 }
 

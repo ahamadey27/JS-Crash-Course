@@ -2,3 +2,21 @@ h1 {
     color:red;
     font-style: italic;
 }
+
+#main-heading{
+    font-size: 48px;
+}
+
+ /*descendent selector..means only matches if a descendent of some other specified element and can add multiple descendent selectors like "html body p strong*/
+p strong{         
+    color: blue;
+}
+
+.highlight{
+    background-color: yellowgreen;
+}
+
+/*Descendent selector of .highlight class*/
+.highlight strong{
+    background-color: orange;
+}

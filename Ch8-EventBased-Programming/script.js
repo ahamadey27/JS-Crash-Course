@@ -15,12 +15,13 @@ paragraph.addEventListener("click", () =>
     console.log("par clicked!");
 });
 
+//Example of Event Bubbling (progression of events from children to ancestors)
 document.querySelector("em").addEventListener("click", () => 
 {
     console.log("Clicked \"em\" element");
 });
 
-document.querySelector("bodt").addEventListener("click", () => 
+document.querySelector("body").addEventListener("click", () => 
 {
     console.log("Clicked \"body\" element");
 });

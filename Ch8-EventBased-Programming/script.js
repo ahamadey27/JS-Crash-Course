@@ -9,9 +9,19 @@ heading.addEventListener("click", () => //callback function (calling a function 
     
 });
 
-let paragraph = document.querySelector("par-function");
+let paragraph = document.querySelector(".par-function");
 paragraph.addEventListener("click", () => 
 {
     console.log("par clicked!");
+});
+
+document.querySelector("em").addEventListener("click", () => 
+{
+    console.log("Clicked \"em\" element");
+});
+
+document.querySelector("bodt").addEventListener("click", () => 
+{
+    console.log("Clicked \"body\" element");
 });
 

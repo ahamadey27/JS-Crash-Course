@@ -1,7 +1,7 @@
 li {
-    cursor: pointer;
+    cursor: pointer; /*changes default cursor to the pointer*/
 }
 
 li:hover {
-    text-decoration: underline;
+    text-decoration: underline; /*underlines list items*/
 }

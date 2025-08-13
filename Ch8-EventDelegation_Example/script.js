@@ -30,18 +30,20 @@ document.querySelector("html").addEventListener("keydown", e =>
     {
         currentY -= 5;
     }
-    elseif(e.key == "a")
+    else if(e.key == "a")
     {
-        currentY += 5;
+        currentX -= 5;
     }
     
-    elseif(e.key == "d")
+    else if(e.key == "s")
     {
         currentY += 5;
     }
+     else if(e.key == "d")
+    {
+        currentX += 5;
+    }
 
-    box.style.left = currentX + "px";
+    box.style.left = currentX + "px"; //box is the element and style is DOM property that interacts with CSS
     box.style.top = currentY + "px";
-    
-
 });

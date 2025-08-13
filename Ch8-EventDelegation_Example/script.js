@@ -21,3 +21,27 @@ document.querySelector("html").addEventListener("mousemove", e =>
     box.style.left = e.clientX + 2 + "px";
     box.style.top = e.clientY + 2 + "px";
 });
+
+let currentY = 0;
+let currentX = 0;
+document.querySelector("html").addEventListener("keydown", e => 
+{
+    if(e.key == "w")
+    {
+        currentY -= 5;
+    }
+    elseif(e.key == "a")
+    {
+        currentY += 5;
+    }
+    
+    elseif(e.key == "d")
+    {
+        currentY += 5;
+    }
+
+    box.style.left = currentX + "px";
+    box.style.top = currentY + "px";
+    
+
+});

@@ -7,3 +7,9 @@ wordList.addEventListener("click", event =>
     sentence.textContent += word;
     sentence.textContent += " ";
 });
+
+//Detects mouse movement on xy grid
+document.querySelector("html").addEventListener("mousemove", e => 
+{
+    console.log(`x: ${e.clientX}, y: ${e.clientY}`);
+});

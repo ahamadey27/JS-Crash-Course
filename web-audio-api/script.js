@@ -13,7 +13,9 @@ play.addEventListener("click", () => {
         oscillator: {type: "sine"},
         envelope: {attack: 0, decay: 0, sustain: 1, release: 0 },
         volume: -6
-    }).toDestination
+    }).toDestination //connects synth to audio context's output  
+
+    synth.triggerAttackRelease("A4", 2, 0) //parameters are note, duration and time which note is played
     
     //Basic Audio Web API oscillator with gain 
     /*let audioCtx = new AudioContext();

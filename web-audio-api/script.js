@@ -18,12 +18,12 @@ play.addEventListener("click", () => {
 
     //parameters are note, duration and time which note is played
     synth.triggerAttackRelease("A3", 2, 0)
-    synth.triggerAttackRelease("B3", 2, 1)
+    synth.triggerAttackRelease(["B3", "D4"], 2, 1) //first argument takes an array for polyphonic notes 
     synth.triggerAttackRelease("C#4", 2, 2)
-    synth.triggerAttackRelease("D4", 2, 3)
-    synth.triggerAttackRelease("E4", 2, 4)
+    synth.triggerAttackRelease(["D4", "F#4"], 2, 3)
+    synth.triggerAttackRelease(["E4", "A4"], 2, 4)
     synth.triggerAttackRelease("F#4", 2, 5)
-    synth.triggerAttackRelease("G#4", 2, 6) 
+    synth.triggerAttackRelease(["G#4", "B4"], 2, 6) 
     synth.triggerAttackRelease("A4", 2, 7) 
     
     //Basic Audio Web API oscillator with gain 

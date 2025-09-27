@@ -8,15 +8,15 @@ play.addEventListener("click", () => {
     let audioCtx = new AudioContext();
 
     let oscNode = audioCtx.createOscillator();
-    oscNode.frequency.value = 440;
+    oscNode.frequency.value = 220;
 
     let gainNode = audioCtx.createGain();
-    gainNode.gain.value = 0.5;
+    gainNode.gain.value = 0.4;
 
     oscNode.connect(gainNode);
     gainNode.connect(audioCtx.destination);
 
-    oscNode.start(audioCtx.currentTime);
+    oscNode.start(audioCtx.currentTime + 0.5);
     oscNode.stop(audioCtx.currentTime + 2);
 });
 

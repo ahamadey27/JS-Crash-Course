@@ -5,7 +5,18 @@ play.addEventListener("click", () => {
     play.style = "display: none"; //Hide this button on click
     playing.style = ""; //Replaces with "playing" string
 
-    let audioCtx = new AudioContext();
+    //Synth using Tone.js
+    Tone.start();
+
+    //takes object as an argument
+    let synth = new Tone.Synth({
+        oscillator: {type: "sine"},
+        envelope: {attack: 0, decay: 0, sustain: 1, release: 0 },
+        volume: -6
+    }).toDestination
+    
+    //Basic Audio Web API oscillator with gain 
+    /*let audioCtx = new AudioContext();
 
     let oscNode = audioCtx.createOscillator();
     oscNode.frequency.value = 220;
@@ -17,6 +28,6 @@ play.addEventListener("click", () => {
     gainNode.connect(audioCtx.destination);
 
     oscNode.start(audioCtx.currentTime + 0.5);
-    oscNode.stop(audioCtx.currentTime + 2);
+    oscNode.stop(audioCtx.currentTime + 2);*/
 });
 
